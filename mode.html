@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>公众号文章模板</title>
+		<script>
+			function copyFn() {
+				var val = document.getElementById('copyMy');
+				window.getSelection().selectAllChildren(val);
+				document.execCommand("Copy");
+				alert("已复制好，可贴粘。");
+		 
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="th1">无输入</h1>
+		<div>
+		    <span id="copyMy">nihao</span><button onClick="copyFn()">点击复制</button>
+		</div>
+	</body>
+</html>
